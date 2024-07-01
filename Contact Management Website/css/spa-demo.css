@@ -1,0 +1,232 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;  
+    line-height: 1.6;
+    font-family: sans-serif; 
+}
+
+.page{
+    display: none;
+    width: 100%;
+    min-height: 100%; 
+    position: fixed;  
+   
+}
+
+.active{
+    display: block; 
+}
+
+.header{
+    background-color:rgba(8,7,16,0.6);
+    padding-top: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    height: 110px;
+   
+}
+
+#updateItem{
+    display: none;
+}
+
+#number{
+    display: none;
+}
+
+#number_submit{
+    display: none;
+}
+
+#home{
+  background-image:url("../images/miri.jpg");
+   background-size:cover; 
+}
+
+#list{
+    background-image:url("../images/miri.jpg");
+    background-size:cover;
+}
+
+a{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-top:200px;
+    padding: 17px;
+    text-decoration: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgba(8,7,16,0.6);
+    transition: background-color .5s;
+    transition: font-size .5s;
+    text-align:center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a:hover{
+    background-color: rgb(107, 109, 109);
+    font-size: 45px;
+}
+
+#sign{
+    display:block ;
+}
+
+#log
+{
+    display: none;
+}
+
+input
+{
+    width: 300px;
+    height: 40px;
+    margin: 30px;
+}
+
+.createNewCreate
+{
+    border-radius:5px;
+    font-size: 25px;
+    font-style:italic;
+    font-variant:small-caps;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-stretch:wider;
+    width: 560px;
+    height: 150px;
+    position: absolute;
+    margin: 1px;
+    border:2px solid grey;
+    box-shadow: 0 0 60px rgba(8,7,16,0.6);
+    background-color: rgba(255,255,255,0.13);
+    backdrop-filter: blur(10px);
+}
+
+#boxFriend{
+    font-size: 20px;
+    position: absolute;
+    display:none;
+    width:200em;
+    height:2000em;
+    margin-right: 20%;
+}
+
+#update_number
+{
+    display:block;
+    width:30%;
+    height:20px;
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    background-color: rgba(255,255,255,0.13);
+    backdrop-filter: blur(10px);
+}
+
+.createNew
+{
+    height:60px;
+    width:60px;
+    border-radius:45px;
+    float: left;
+    margin-left: 6px;
+    margin-top: 20px;
+    border:2px solid black;
+}
+
+.btnClass
+{
+
+    width:200px;
+    height:35px;
+	background-color: rgba(255,255,255,0.07);
+	border-radius: 3px;
+	padding: 0px 3%;
+    font-size: 88%;
+}
+
+.btnClasses{
+    width:200px;
+    height:40px;
+	background-color: rgba(255,255,255,0.07);
+	border-radius: 3px;
+	padding: 0px 3%;
+    font-size: 88%;
+ display: inline;
+}
+
+.btnClass:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.createNewCreate
+{
+margin-top:20%;
+margin-left:5%;
+}
+
+.titleContact{
+    font-size:100%;
+    float:none;
+}
+
+.letter{
+    width:100px;
+    height:20px;
+    background-color:rgb(65, 65, 65);
+}
+
+#h1Letter{
+font-size: 20px;
+}
+
+#search_div{
+    display: none;
+    width: 86%;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:30px;
+    margin-top: 50px;
+}
+
+#search{
+    width: 50%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:30px;
+    margin-top: 10px;
+}
+
+#mouseover_img{
+    transition: 0.1s;
+    height:350px;
+    width: auto;
+    border-radius:5000px;
+    margin-left: 6px;
+    margin-top: 20px;
+    border:2px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 200px;
+    color: black;
+}
+
+#mouseover{
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+  color: bisque;
+    background-color: transparent;
+}

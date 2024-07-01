@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/spa-demo.css">
+    <link rel="stylesheet" href="../css/signIn.css">
+    <script src="../javascript/spa-demo.js"></script>
+    <script src="../javascript/client.js"></script>
+    <script src="../javascript/server.js"></script>
+    <script src="../javascript/database.js"></script>
+    <script src="../javascript/clientJS.js"></script>
+    <script src="../javascript/netWork.js"></script>
+    <script src="../javascript/FXMLHttpRequest.js"></script>
+    <title>SPA Demonstration</title>
+</head>
+
+<body>
+
+    <main>
+
+
+        <div class="page active" id="home">
+            <div class="header">
+                <a href="#" data-target="home" class="nav-link">content </a>
+                <a href="#" data-target="list" class="nav-link">creat new </a>
+                <a href="#" data-target="home" class="nav-link"  id="log_out2">log out </a>
+            </div>
+
+            <div id="sign">
+               
+                <form class="form" action="javascript:signIn()">
+                    <legend>sign in</legend>
+                    <input class="input" id="new-name" type="text" placeholder="Your Username" required>
+                    <input class="input" id="new-email" type="email" placeholder="Your Email" required>
+                    <input class="input" id="new-number" type="number" placeholder="Number-Phone"required >
+                    <input class="input" id="new-password" type="password" placeholder="Set a Password"  required>
+                    <h6>if you are registered to our web site please log in</h6>
+                    <input class="input" type="submit" value="log in" onclick="displaylog()">
+                    <button type="submit" id="new-account"  >sign Up</button>
+                </form>
+            </div>
+
+            <div id="log">
+                <form class="form" action="javascript:logIn()">
+                    <legend>log in</legend>
+
+                    <input class="input" id="name" required  type="text" placeholder="Your name">
+                    <input class="input" id="email" type="email" placeholder="Your Email" required>
+                    
+
+                    <input class="input" id="password" type="password" placeholder="Password" required>
+                    <h6>if you are not registered please sign in</h6>
+                    <input class="input" type="submit" value="sign in" onclick="displaysign()">
+                    <button type="submit" id="log_button"  >Log In</button>
+                </form>
+         
+            </div>
+            <div id="search_div">
+                <input type="search" id="search"  placeholder="Search for names.."
+                title="Type in a name">
+            <div id="boxFriend">
+                
+               
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page" id="list">
+            <div class="header">
+                <a href="#" data-target="home" class="nav-link">content</a>
+                <a href="#" data-target="list" class="nav-link">creat new</a>
+                <a href="#" data-target="home" class="nav-link"  id="log_out1">log out</a>
+            </div>
+            <form class="form" >
+            <legend>creat new</legend>
+                <input class="input" type="text" id="first_name_add" placeholder="first name" required>
+                <input class="input" type="text" id="last_name_add" placeholder="last name" required>
+                <input class="input" type="tel" id="phone_name_add" placeholder="phone" required>
+                <button id="add_your_friend"  ><a href="#" id="click"data-target="home" class="nav-link"> click</a></button>
+        </form>
+        </div>
+
+        <div class="page" id="detail">
+            <div class="header">
+                <a href="#" data-target="home" class="nav-link">content</a>
+                <a href="#" data-target="list" class="nav-link">creat new</a>
+                <a href="#" data-target="home" class="nav-link" onclick="signOut()">log out</a>
+
+            </div>
+
+        </div>
+
+    </main>
+    </div>
+</body>
+
+</html>
